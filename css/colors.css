@@ -1,0 +1,25 @@
+.text-yellow{
+	color: #F1CF27;
+}
+.text-green{
+	color: #019875; /** Green Haze **/
+}
+.text-blue{
+	color: #4183D7; /** Royal Blue **/
+}
+.text-red{
+	color: #C0392B; /** Tall Poppy **/
+}
+.text-grey{
+	color: #BDC3C7; /** Silver Sand**/
+}
+.text-white{
+	color:#fff;
+}
+
+.bg-black{
+	background-color: #000;
+}
+.bg-white{
+	background-color: #FFF;
+}

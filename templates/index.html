@@ -1,0 +1,48 @@
+{% extends 'components/_base.html' %}
+{% block content %}
+    {% if home.enabled == "1" %}
+        <!-- Home -->
+        {% include 'home-sections/_home.html' %}
+        <!-- Home Section End -->
+    {% endif %}
+    {% if about.enabled == "1" %}
+        <!-- About Section -->
+        {% include 'home-sections/_about.html' %}
+        <!-- End About Section -->
+    {% endif %}
+    {% if counter.enabled == "1" %}
+        <!-- Counter Section -->
+        {% include 'home-sections/_counter.html' %}
+        <!-- Counter Section End -->
+    {% endif %}
+    {% if portfolio.enabled == "1" %}
+        <!-- Portfolio Section Start -->
+        {% include 'home-sections/_portfolio.html' %}
+        <!-- Portfolio Section End -->
+    {% endif %}
+    {% if services.enabled == "1" %}
+        <!-- Services Section -->
+        {% include 'home-sections/_services.html' %}
+        <!-- End Services Section -->
+    {% endif %}
+    {% if testimonial.enabled == "1" %}
+        <!-- Testimonails Section -->
+        {% include 'home-sections/_testimonials.html' %}
+        <!-- End Testimonials Section -->
+    {% endif %}
+    {% if brands.enabled == "1" %}
+        <!-- Brands Section Start -->
+        {% include 'home-sections/_brands.html' %}
+        <!-- End Brands Section -->
+    {% endif %}
+    {% if team.enabled == "1" %}
+        <!-- Team Section Start -->
+        {% include 'home-sections/_team.html' %}
+        <!-- End Team Section -->
+    {% endif %}
+    {% if contact.enabled == "1" %}
+        <!-- Contact Section -->
+        {% include 'home-sections/_contact.html' %}
+        <!-- End Contact Section -->
+    {% endif %}
+{% endblock %}

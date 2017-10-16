@@ -1,0 +1,49 @@
+<section id="portfolioSection" class="slide full-screen {% if portfolio.background.enable_parallax %}parallax-bg{% endif %}">
+    <div class="background-wrapper" style="background-image:url('{{ portfolio.background.image }}')">
+        <div class="bg-video" data-enabled="{{ portfolio.background.enable_video }}">      
+            <div class="yt-video" id="portfolio-video" data-videoId="{{ portfolio.background.video_id }}"></div>
+        </div>
+        <div class="bg-particles" id="portfolio-particles" data-enabled="{{ portfolio.background.enable_particles }}"></div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="section-heading portfolioLabel">{{ portfolio.label }}</div>
+            <div class="absolute-center">    
+                <div class="wrapper">
+                    <div class="container text-white">
+                        <div class="row">
+                            <div class="col-xs-12 heading"><p class="bottom-border bottom-border-hover center">{{ portfolio.heading }}</p></div>  
+                            <div class="col-xs-12 description">
+                                <p class="text-center">{{ portfolio.description }}</p>
+                            </div>
+                        </div>
+                        <div class="row portfolio-categories text-center">
+                            <ul class="no-list list-horizontal">
+                                <li><a href="#" data-category="*" class="active">All</a></li>
+                                {%- for category in portfolio.categories %}
+                                <li><a href="#" data-category=".category{{ loop.index }}">{{ category }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="row portfolio-container" data-layout-mode="{{ portfolio.layoutMode }}">
+                        {%- for pf in portfolio.data %}
+                            <div class="portfolio-box col-xs-12 col-sm-6 col-md-4{%- for category in pf.category %} category{{ category }} {% endfor %}">
+                                <img src="{{ pf.image }}" class="portfolio-image" alt="{{ pf.info }}" />
+                                <div class="caption">
+                                    <h2>{{ pf.info }}</h2>
+                                    <p class="description">{{ pf.subinfo }}</p>
+                                    <p class="icons">
+                                        <a href="{{ pf.link }}">
+                                            <i class="fa fa-eye"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        {%- endfor %}
+                        </div><!-- Row -->
+                    </div><!-- Container -->
+                </div><!-- Wrapper -->
+            </div><!-- Absolute Center-->
+        </div><!--Container-->
+    </div><!--Content-->
+</section>

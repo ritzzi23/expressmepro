@@ -1,0 +1,57 @@
+<section id="teamSection" class="full-screen slide {% if team.background.enable_parallax %}parallax-bg{% endif %}">
+    <div class="background-wrapper" style="background-image:url('{{ team.background.image }}')">
+        <div class="bg-video" data-enabled="{{ team.background.enable_video }}">      
+            <div class="yt-video" id="team-video" data-videoId="{{ team.background.video_id }}"></div>
+        </div>
+        <div class="bg-particles" id="team-particles" data-enabled="{{ team.background.enable_particles }}"></div>
+    </div>
+    <div class="content overlay-gold">
+        <div class="container">
+            <div class="section-heading teamLabel">{{ team.heading }}</div>
+            <div class="absolute-center">
+                <div class="wrapper">
+                    <div class="container text-white">
+                        <div class="row">
+                            <div class="col-xs-12 heading"><p class="bottom-border bottom-border-hover center">{{ team.heading }}</p></div>  
+                            <div class="col-xs-12 description">
+                                <p class="text-center">{{ team.description }}</p>
+                            </div>
+                        </div>
+                            
+                        <div class="row teamList row-centered slick-dark">
+                        {%- for member in team.members %}
+                            <div class="col-lg-2 teamBox col-centered">
+                                <div class="row teamPhotoContainer block-center hover-opacity hover-opacity-80">
+                                    <img src="{{ member.ppicUrl }}" alt="{{ member.name }}" title="{{ member.name }}" />
+                                </div>
+                                <div class="row bottom-border bottom-border-40 teamInfoContainer text-left">
+                                    <div class="col-xs-12 teamName no-padding">{{ member.name }}</div>
+                                    <div class="col-xs-12 teamDesignation no-padding">
+                                        {%- if member.designation %}
+                                            {{ member.designation }}
+                                        {%- else %}
+                                        <br>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row teamSocial">
+                                    {% for link in member.links %}
+                                    <div class="col-xs-2 no-padding">
+                                        <a href="{{ link.url }}" target="_blank" title="{{ link.label }}" class="neutralize-link">
+                                            <span class="fa-stack fa-lg pull-left hover-opacity hover-opacity-60">
+                                                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                                                <i class="fa fa-{{ link.icon }} fa-stack-1x"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

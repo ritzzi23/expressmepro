@@ -1,0 +1,465 @@
+{
+    "meta":{
+		"site_title":"ExpressMe Pro | Portfolio",
+		"seo":{
+			"author": "Ayush Agarwal",
+			"site_description": "A beautiful single page personal portfolio template to showcase your profile. Contains 4 Sections- Home, About, Portfolio, Contact. Open Source",
+			"keywords": "ayush, thisisayush, Ayush Agarwal, template, html template, portfolio, portfolio template, open source, foss"
+		},
+		"opengraph":{
+			"title": "ExpressMe Pro",
+			"site_url": "https://www.thisisayush.com/",
+			"image": "images/portfolio/portfolio3.jpg",
+			"video": ""
+		},
+		"favicon": "images/favicon.png",
+		"chrome_tab_color": "#000"
+    },
+	"home": {
+		"enabled": "1",
+		"title": "Home",
+		"heading": "ExpressMe Pro",
+		"designation": "Single Page Portfolio",
+		"background": {
+			"enable_particles": "0",
+			"enable_video": "1",
+			"video_id": "2QKQX7fbjnA",
+			"image": "images/backgrounds/bg-home.jpg",
+			"enable_parallax": "1"
+		},
+		"subheading": ["9 Sections", "3 Layer Background", "Easy to Build", "Filterable Portfolio Grid"],
+		"avatar_enable":"1",
+        "avatar_url": "images/team/team1.jpg"
+	},
+	"about": {
+		"enabled": "1",
+		"label": "About",
+		"title": "About",
+		"heading": "About Me",
+		"description": "An open source beautiful single page personal portfolio template to showcase your profile. Contains 9 Sections- Home, About, Counter, Portfolio, Services, Testimonials, Brands, Team and Contact.",
+		"addToMenu": "1",
+		"background": {
+			"enable_particles":"0",
+			"enable_video": "0",
+			"video_id": "",
+			"image": "images/backgrounds/bg-1080p-1.jpg",
+			"enable_parallax": "1"
+		},
+		"featured": {
+			"label":"Features",
+			"data": [{
+				"icon": "fa-puzzle-piece",
+				"hover": "default",
+				"info": "9 modules",
+				"subinfo": "Enable/Disable the ones you want"
+			},
+			{
+				"icon": "fa-css3",
+				"hover": "yellow",
+				"info": "Bootstrap 3",
+				"subinfo": "Made with Bootstrap3"
+			},
+			{
+				"icon": "fa-image",
+				"hover": "orange",
+				"info": "3 Layer Background",
+				"subinfo": "Choose within Video, Image, or Particle Background"
+			},
+			{
+				"icon": "fa-suitcase",
+				"hover": "default",
+				"info": "Python Builder",
+				"subinfo": "Easily Generate the site using Python Base Builder"
+			}]
+		},
+		"skills": {
+			"label": "Skills",
+			"data": [
+				{
+					"label": "Lorem Ipsum",
+					"color": "#337ab7",
+					"percent": "70"
+				},
+				{
+					"label": "Lorem Ipsum",
+					"color": "#d9534f",
+					"percent": "60"
+				},
+				{
+					"label": "Lorem Ipsum",
+					"color": "#f0ad4e",
+					"percent": "10"
+				},
+				{
+					"label": "Lorem Ipsum",
+					"color": "#5cb85c",
+					"percent" : "30"
+				}
+			]
+		}
+	},
+	"counter": {
+		"enabled": "1",
+		"label": "",
+		"style" : "default",
+		"addToMenu": "0",
+		"background": {
+			"enable_particles": "0",
+			"enable_video": "0",
+			"video_id": "",
+			"image": "images/backgrounds/pattern1.png",
+			"enable_parallax": "1"
+		},
+		"data": [{
+				"label":"Lorem Ipsum",
+				"count": "1",
+				"step": "1"
+			},
+			{
+				"label":"Lorem Ipsum",
+				"count": "100",
+				"step": "2"
+			},
+			{
+				"label":"Lorem Ipsum",
+				"count":"3",
+				"step": "1"
+			},
+			{
+				"label":"Lorem Ipsum",
+				"count": "11484",
+				"step": "200"
+			}
+		]
+	},
+	"portfolio": {
+		"enabled": "1",
+		"label": "Portfolio",
+		"title": "Portfolio",
+		"heading": "Portfolio Section",
+		"description": "Showcase your portflio in beautiful filterable responsive grid.",
+		"addToMenu": "1",
+		"background": {
+			"enable_particles": "1",
+			"enable_video": "0",
+			"video_id": "",
+			"image": "images/backgrounds/bg-1080p-4.jpg",
+			"enable_parallax": "1"
+		},
+		"layoutMode":"masonry",
+		"effect":"simple",
+		"categories": ["Websites","Templates","jQuery Plugins", "Lorem Ipsum"],
+		"data": [{
+				"image": "images/portfolio/portfolio1.jpg",
+				"info": "Portfolio Title",
+				"subinfo": "Aenean a eleifend dui. Donec malesuada mi et mi tempus.",
+				"category": ["4"],
+				"link": "http://example.com"
+			},
+			{
+				"image": "images/portfolio/portfolio2.jpg",
+				"info": "fbGallery",
+				"subinfo": "A jquery plugin to show images from facebook page",
+				"category": ["3"],
+				"link": "http://friendsocial.github.io/fbgallery.github.io"
+			},
+			{
+				"image": "images/portfolio/portfolio3.jpg",
+				"info": "ExpressMe Pro",
+				"subinfo": "A personal/team portfolio page this website is running on!",
+				"category": ["2"],
+				"link": "http://friendsocial.github.io/expressme"
+			},
+			{
+				"image": "images/portfolio/portfolio4.jpg",
+				"info": "Letstream",
+				"subinfo": "A Video Publishing Platform",
+				"category": ["1"],
+				"link": "https://www.theletstream.com/"
+			},
+			{
+				"image": "images/portfolio/portfolio5.jpg",
+				"info": "Lorem Ipsum",
+				"subinfo": "Aenean a eleifend dui. Donec malesuada mi et mi tempus.",
+				"category": ["1","4"],
+				"link" : "http://example.com/"
+			}
+		]
+	},
+	"services": {
+		"enabled": "1",
+		"label":"Services",
+		"title":"",
+		"heading": "Services Section",
+		"description": "Showcase your Services in a Responsive Carousel",
+		"addToMenu": "1",
+		"background": {
+			"enable_particles": "0",
+			"enable_video": "",
+			"video_id": "",
+			"image": "",
+			"enable_parallax": ""
+		},
+		"data":[
+			{
+				"icon": "fa-youtube",
+				"title": "Video Background",
+				"description": "Each section supports youtube video background!"
+			},
+			{
+				"icon": "fa-image",
+				"title": "Parallax",
+				"description": "Enable/Disable Parallax for any section"
+			},
+			{
+				"icon": "fa-puzzle-piece",
+				"title": "9 Modules",
+				"description": "Keep the module you want, Remove what you don't!"
+			},
+			{
+				"icon": "fa-css3",
+				"title": "Responsive",
+				"description": "Made with Bootstrap, it looks beautiful even on mobile!"
+			},
+			{
+				"icon": "fa-font-awesome",
+				"title": "Font Awesome",
+				"description": "Uses Font-Awesome Icons"
+			},
+			{
+				"icon": "fa-google",
+				"title": "SEO Friendly",
+				"description": "Meta, Open Graph Tags and Pre-rendered HTML increases your SEO"
+			},
+			{
+				"icon": "fa-github",
+				"title": "Open Source",
+				"description": "Open Source Means you can use it wherever you want!"
+			},
+			{
+				"icon": "fa-cube",
+				"title": "Builder",
+				"description": "Configure your options and the builder will generate the site for you!"
+			}
+		]
+	},
+	"testimonials":{
+		"enabled": "1",
+		"label": "Testimonials",
+		"title": "Testimonials",
+		"heading": "What does clients say?",
+		"description": "Showcase your client opinions and reviews",
+		"addToMenu": "1",
+		"background": {
+			"enable_particles": "0",
+			"enable_video": "0",
+			"video_id":"",
+			"image": "images/backgrounds/bg-1080p-10.jpg",
+			"enable_parallax": "1"
+		},
+		"enable_controls": "0",
+		"data": [
+			{
+				"avatar": "images/team/team1.jpg",
+				"text" : "Cras leo nibh, vulputate quis velit non, efficitur pharetra odio. Sed rhoncus sem et dolor faucibus, luctus suscipit sapien bibendum. Vivamus ac mollis urna. Sed venenatis imperdiet elit, a tristique tellus tincidunt a.",
+				"name" : "Lorem Ipsum - Letstream"
+			},
+			{
+				"avatar": "images/team/team2.jpg",
+				"text" : "Morbi finibus ipsum vehicula urna rutrum, ac accumsan libero sollicitudin. Suspendisse ac justo at mi feugiat fermentum. Fusce sit amet imperdiet arcu. Integer egestas bibendum dui, at convallis metus dignissim ut.",
+				"name" : "Lorem Ipsum - Letstream"
+			},
+			{
+				"avatar": "images/team/team3.jpg",
+				"text" : "Donec condimentum, arcu a consequat congue, orci leo porta mauris, eget condimentum mauris justo eget nulla. Praesent eget lorem velit. Pellentesque sed erat sit amet felis posuere cursus iaculis in velit.",
+				"name" : "Lorem Ipsum - Letstream"
+			},
+			{
+				"avatar": "images/team/team4.jpg",
+				"text" : "Cras vel tristique risus. Proin a sem placerat lorem tempor tristique sit amet et velit. Duis a scelerisque metus. Donec varius nibh sit amet tortor laoreet, vitae tempus justo sollicitudin. Sed elementum egestas dictum. Suspendisse potenti. Etiam dictum felis non enim malesuada facilisis.",
+				"name" : "Lorem Ipsum - Letstream"
+			}
+		]
+	},
+	"brands": {
+		"enabled": "1",
+		"label": "",
+		"title": "",
+		"heading": "",
+		"description": "",
+		"addToMenu": "0",
+		"background": {
+			"enable_particles": "0",
+			"enable_video": "0",
+			"video_id": "",
+			"image": "",
+			"enable_parallax": "0"
+		},
+		"data": ["images/brands/brand1.png", "images/brands/brand2.png", "images/brands/brand3.png"]
+	},
+	"team":{
+		"enabled":"1",
+		"label": "Team",
+		"title": "",
+		"heading": "Meet Our Team",
+		"description": "Are you a team? Showcase your team in a beautful responsive grid.",
+		"addToMenu": "0",
+		"background": {
+			"enable_particles": "0",
+			"enable_video": "0",
+			"video_id": "",
+			"image": "images/backgrounds/bg-1080p-4.jpg",
+			"enable_parallax": "1"
+		},
+		"members":[
+			{
+				"name": "Lorem Ipsum",
+				"designation": "Lorem Ipsum",
+				"ppicUrl": "images/team/team1.jpg",
+				"links": [
+					{
+						"label":"Github",
+						"url": "https://github.com/thisisayush/",
+						"icon": "github"
+					},
+					{
+						"label":"Facebook",
+						"url": "https://facebook.com/thisisayush/",
+						"icon": "facebook"
+					}
+				]
+			},
+			{
+				"name": "Lorem Ipsum",
+				"designation": "Lorem Ipsum",
+				"ppicUrl": "images/team/team2.jpg",
+				"links": [
+					{
+						"label":"Github",
+						"url": "https://github.com/thisisayush/",
+						"icon": "github"
+					},
+					{
+						"label":"Facebook",
+						"url": "https://facebook.com/thisisayush/",
+						"icon": "facebook"
+					}
+				]
+			},
+			{
+				"name": "Lorem Ipsum",
+				"designation": "Lorem Ipsum",
+				"ppicUrl": "images/team/team3.jpg",
+				"links": [
+					{
+						"label":"Github",
+						"url": "https://github.com/thisisayush/",
+						"icon": "github"
+					},
+					{
+						"label":"Facebook",
+						"url": "https://facebook.com/thisisayush/",
+						"icon": "facebook"
+					}
+				]
+			},
+			{
+				"name": "Lorem Ipsum",
+				"designation": "Lorem Ipsum",
+				"ppicUrl": "images/team/team4.jpg",
+				"links": [
+					{
+						"label":"Github",
+						"url": "https://github.com/thisisayush/",
+						"icon": "github"
+					},
+					{
+						"label":"Facebook",
+						"url": "https://facebook.com/thisisayush/",
+						"icon": "facebook"
+					}
+				]
+			},
+			{
+				"name": "Lorem Ipsum",
+				"designation": "Lorem Ipsum",
+				"ppicUrl": "images/team/team5.jpg",
+				"links": [
+					{
+						"label":"Github",
+						"url": "https://github.com/thisisayush/",
+						"icon": "github"
+					},
+					{
+						"label":"Facebook",
+						"url": "https://facebook.com/thisisayush/",
+						"icon": "facebook"
+					}
+				]
+			}
+		]
+	},
+	"contact": {
+		"enabled": "1",
+		"label": "Contact",
+		"title": "Contact",
+		"heading": "Let's Connect",
+		"description": "Provide your visitors easy access to your contact information with a Google Map!",
+		"addToMenu": "1",
+		"background": {
+			"enable_particles": "0",
+			"enable_video": "0",
+			"video_id": "",
+			"image": "images/backgrounds/bg-1080p-9.jpeg",
+			"enable_parallax": "1"
+		},
+		"mobile": "XXXXXXXXXX",
+		"email": "demo@example.com",
+		"address": "602, Pavilion Court 16, Sector 128, <br>Noida, Uttar Pradesh,<br>India",
+		"maps_api_key": "AIzaSyD2DVlvcLu7o2m-6OhfbipppHEzRofJh48",
+		"maps_query": "Pavilion Court 16, Sector 128, Noida, Uttar Pradesh, India"
+	},
+	"links": [{
+			"title": "Find me on Facebook",
+			"url": "https://facebook.com/#/",
+			"icon": "fa-facebook",
+			"color": "blue"
+		},
+		{
+			"title": "Star me on github",
+			"url": "https://github.com/#/",
+			"icon": "fa-github",
+			"color": "default"
+		},
+		{
+			"title": "Follow me on LinkedIn",
+			"url": "https://linkedin.com/in/#",
+			"icon": "fa-linkedin",
+			"color": "blue"
+		},
+		{
+			"title": "Subscribe me on YouTube",
+			"url": "https://youtube.com/#/",
+			"icon": "fa-youtube",
+			"color": "red"
+		},
+		{
+			"title": "Ping me on Telegram",
+			"url": "https://telegram.org/#/",
+			"icon": "fa-telegram",
+			"color": "lblue"
+		},
+		{
+			"title": "Follow me on Twitter",
+			"url": "https://twitter.com/#/",
+			"icon": "fa-twitter",
+			"color": "blue"
+		},
+		{
+			"title": "Message me on WhatsApp",
+			"url": "https://api.whatsapp.com/send?phone=91XXXXXXXXXX",
+			"icon": "fa-whatsapp",
+			"color": "green"
+		}
+	]
+}

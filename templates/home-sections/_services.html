@@ -1,0 +1,51 @@
+<section id="servicesSection"  class="slidevalign-wrapper {% if services.background.enable_parallax %}parallax-bg{% endif %}"> 
+    <div class="background-wrapper" style="background-image:url('{{ services.background.image }}')">
+        <div class="bg-video" data-enabled="{{ services.background.enable_video }}">      
+            <div class="yt-video" data-videoId="{{ services.background.video_id }}"></div>
+        </div>
+        <div class="bg-particles" id="section2-particles" data-enabled="{{ services.background.enable_particles }}"></div>
+    </div>
+    <div class="content text-center margin-center no-overlay">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 heading"><p class="bottom-border bottom-border-hover center">{{ services.heading }}</p></div>  
+                <div class="col-xs-12 description">
+                    <p class="text-center">{{ services.description }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="servicesCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                        {%- for service in services.data %}
+                            {%- if loop.first %}
+                            <div class="item active">
+                                <div class="row">
+                            {%- endif %}
+                                    <div class="col-xs-12 col-sm-6 col-md-3 service-box">
+                                        <i class="fa {{ service.icon }} fa-4x display-block margin-five margin-bottom-20 text-white"></i>
+                                        <h5 class="text-white">{{ service.title }}</h5>
+                                        <span class="details text-white display-block">{{ service.description }}</span>
+                                    </div>
+                                {%- if loop.index%4 == 0 or loop.last %}
+                                </div>
+                            </div>
+                                    {%- if not loop.last %}
+                            <div class="item">
+                                <div class="row">
+                                    {%- endif %}
+                                {%- endif %}
+                        {%- endfor %}
+                        </div>
+                        <a class="left carousel-control valign-wrapper" href="#servicesCarousel" role="button" data-slide="prev">
+                            <i class="fa fa-chevron-circle-left margin-center"></i>
+                        </a>
+                        <a class="right carousel-control valign-wrapper" href="#servicesCarousel" role="button" data-slide="next">
+                            <i class="fa fa-chevron-circle-right margin-center"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Container -->
+    </div><!-- Content -->
+</section>

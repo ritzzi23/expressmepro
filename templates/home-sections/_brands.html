@@ -1,0 +1,23 @@
+<section id="brandSection" class="slide {% if brands.background.enable_parallax %}parallax-bg{% endif %}">
+    <div class="background-wrapper" style="background-image: url('{{ brands.background.image }}')">
+        <div class="bg-video" data-enabled="{{ brands.background.enable_video }}">      
+            <div class="yt-video" id="brand-video" data-videoId="{{ brands.background.video_id }}"></div>
+        </div>
+        <div class="bg-particles" id="brand-particles" data-enabled="{{ brands.background.enable_particles }}"></div>
+    </div>
+    <div class="content no-overlay">
+        <div class="container">
+            <div class="absolute-center">
+                <div class="wrapper">
+                    <div class="row brandsContainer text-center">
+                    {% for brand in brands.data %}
+                        <div class=" col-xs-12 col-sm-6 col-md-3 brand valign-wrapper block-center">
+                            <img src="{{ brand }}" class="margin-center" />
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div><!-- Wrapper -->
+            </div><!-- Absolute Center -->
+        </div><!-- Container -->
+    </div><!-- Content -->
+</section>

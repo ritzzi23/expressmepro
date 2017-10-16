@@ -1,0 +1,7 @@
+{%- for link in links %}
+<li class="col-auto hover-{{ link.color }}">
+    <a href="{{ link.url }}" title="{{ link.title }}" target="_blank">
+        <i class="icon fa {{ link.icon }}"></i>
+    </a>
+</li>
+{%- endfor %}

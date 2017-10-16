@@ -1,0 +1,59 @@
+    <section id="mainSection" class="slide full-screen {% if home.background.enable_parallax %}parallax-bg{% endif %}">
+        <!-- Home Background -->
+        <div class="background-wrapper" style="background-image:url('{{ home.background.image }}');">
+            <!-- video -->
+            <div class="bg-video" data-enabled="{{ home.background.enable_video }}">      
+                <div class="yt-video" data-videoId="{{ home.background.video_id }}" id="bg-video-main"></div>
+            </div>
+            <!-- Particles -->
+            <div class="bg-particles" id="home-particles" data-enabled="{{ home.background.enable_particles }}"></div>
+        </div>
+        <div class="content">
+            <div class="container">
+               <div class="absolute-center">
+                    <div class="wrapper">
+                        <!-- Avatar -->
+                        {%- if home.avatar_enable == "1" %}
+                        <div class="avatar avatar-custom margin-center">
+                            <img src="{{ home.avatar_url }}">
+                        </div>
+                        {%- endif %}
+                        <!-- End Avatar -->
+                        <div class="margin-center text-center">
+                            <div id="aboutDesignation">{{ home.designation }}</div>
+                            <div id="aboutTitle">{{ home.heading }}</div>
+                            <div id="aboutSubTitle">
+                                <div id="aboutSubTitleStrings" class="hidden">
+                                    {%- for s in home.subheading %}
+                                    <p>{{ s }}</p>
+                                    {%- endfor %}
+                                </div>
+                                <span class="animated-type">&nbsp;</span>
+                            </div>
+                            <div class="container text-center valign-wrapper linksContainer">
+                                <ul class="row text-center" style="font-size: 1.2em">   
+                                    {% include 'components/_links.html' %}
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Menu Primary -->
+                        <nav id="mainSection_menu">
+                            <div class="container">
+                                <ul class="row text-center margin-center">
+                                    <li class="col-auto slide-changer aboutLabel" data-slide="aboutSection">{{ about.label }}</li>
+                                    <li class="col-auto slide-changer portfolioLabel" data-slide="portfolioSection">{{ portfolio.label }}</li>
+                                    <li class="col-auto slide-changer testimonialLabel" data-slide="testimonialSection">{{ testimonial.label }}</li>
+                                    <li class="col-auto slide-changer contactLabel" data-slide="contactSection">{{ contact.label }}</li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Menu Primary (Home) -->
+                    </div>
+                    <!-- Wrapper -->
+                </div>
+                <!-- Absolute Center -->
+            </div>
+            <!-- Container -->
+         </div>
+         <!-- Content -->
+    </section>

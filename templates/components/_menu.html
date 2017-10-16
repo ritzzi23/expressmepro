@@ -1,0 +1,38 @@
+<nav class="navbar navbar-default navbar-fixed-top" id="primaryNav" data-status="off">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand slide-changer" data-slide="mainSection">
+                Ayush Agarwal
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav">
+                <span class="sr-only">Menu</span>
+                <span class="fa fa-bars"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="nav navbar-nav">
+                {%- if about.enabled == "1" and about.addToMenu == "1" %}
+                <li class="col-auto slide-changer aboutLabel" data-toggle="collapse" data-target="#mainNav" data-slide="aboutSection">{{ about.label }}</li>
+                {%- endif %}
+                {%- if counter.enabled == "1" and counter.addToMenu == "1" %}
+                <li class="col-auto slide-changer counterLabel" data-toggle="collapse" data-target="#mainNav" data-slide="counterSection">{{ counter.label }}</li>
+                {%- endif %}
+                {%- if portfolio.enabled == "1" and portfolio.addToMenu == "1" %}
+                <li class="col-auto slide-changer portfolioLabel" data-toggle="collapse" data-target="#mainNav" data-slide="portfolioSection">{{ portfolio.label }}</li>
+                {%- endif %}
+                {%- if services.enabled == "1" and services.addToMenu == "1" %}
+                <li class="col-auto slide-changer servicesLabel" data-toggle="collapse" data-target="#mainNav" data-slide="servicesSection">{{ services.label }}</li>
+                {%- endif %}
+                {%- if testimonial.enabled == "1" and testimonial.addToMenu == "1" %}
+                <li class="col-auto slide-changer testimonialLabel" data-toggle="collapse" data-target="#mainNav" data-slide="testimonialSection">{{ testimonial.label }}</li>
+                {%- endif %}
+                {%- if brands.enabled == "1" and brands.addToMenu == "1" %}
+                <li class="col-auto slide-changer brandsLabel" data-toggle="collapse" data-target="#mainNav" data-slide="brandsSection">{{ brands.label }}</li>
+                {%- endif %}
+                {%- if contact.enabled == "1" and contact.addToMenu == "1" %}
+                <li class="col-auto slide-changer contactLabel" data-toggle="collapse" data-target="#mainNav" data-slide="contactSection">{{ contact.label }}</li>
+                {%- endif %}
+            </ul>
+        </div>
+    </div>
+</nav>

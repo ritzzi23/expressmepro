@@ -1,0 +1,60 @@
+<section id="contactSection" class="full-screen slide {% if contact.background.enable_parallax %}parallax-bg{% endif %}">
+    <div class="background-wrapper" style="background-image: url('{{ contact.background.image }}')">
+        <div class="bg-video" data-enabled="{{ contact.background.enable_video }}">
+            <div class="yt-video" data-videoId="{{ contact.background.video_id }}" id="contact-video"></div>
+        </div>
+        <div class="bg-particles" id="contact-particles" data-enabled="{{ contact.background.enable_particles }}"></div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="section-heading contactLabel">{{ contact.label }}</div>
+            <div class="absolute-center">    
+                <div class="wrapper">
+                    <div class="container text-white">
+                        <div class="row">
+                            <div class="col-xs-12 heading"><p class="bottom-border bottom-border-hover center">{{ contact.heading }}</p></div>  
+                            <div class="col-xs-12 description">
+                                <p class="text-center">{{ contact.description }}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container valign-wrapper contentContainer">
+                                <div class="row margin-center" style="width: 100%">
+                                    <div class="col-xs-12 col-sm-6 contactMetaContainer">
+                                        {% if contact.address|length > 0 %}
+                                        <div class="contactMeta contactAddress">
+                                            <i class="fa fa-map-marker abs-badge-left"></i>
+                                            <a href="https://www.google.com/maps/place/{{ contact.maps_query }}" target="_blank" alt="Address">{{ contact.address }}</a>
+                                        </div>
+                                        {% endif %}
+                                        {% if contact.mobile|length > 0 %}
+                                        <div class="contactMeta contactMobile">
+                                            <i class="fa fa-phone abs-badge-left"></i>
+                                            <a href="tel://{{ contact.mobile }}">+{{ contact.mobile }}</a>
+                                        </div>
+                                        {% endif %}
+                                        {% if contact.email|length > 0 %}
+                                        <div class="contactMeta contactEmail">
+                                            <i class="fa fa-envelope abs-badge-left"></i>
+                                            <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+                                        </div>
+                                        {% endif %}
+                                        <div class="linksContainer">
+                                            <h3 class="bottom-border text-left">Find Me on</h3>
+                                            <ul class="row text-center">
+                                            {% include 'components/_links.html' %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 mapsContainer">
+                                        <iframe class="gmaps" src="https://www.google.com/maps/embed/v1/place?key={{ contact.maps_api_key }}&q={{ contact.maps_query }}"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Container -->
+                </div> <!-- Wrapper -->
+            </div> <!-- Absolute Center -->
+        </div> <!-- Container -->
+    </div> <!-- Content -->
+</section>

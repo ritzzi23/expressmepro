@@ -1,0 +1,76 @@
+    <section id="aboutSection" class="slide full-screen box-shadow {% if about.background.enable_parallax %}parallax-bg{% endif %}">
+        <div class="background-wrapper" style="background-image:url('{{ about.background.image }}')">
+            <div class="bg-video" data-enabled="{{ about.background.enable_video }}">      
+                <div class="yt-video" data-videoId="{{ about.background.video_id }}" id="bg-video-about"></div>
+            </div>
+            <div class="bg-particles" id="about-particles" data-enabled="{{ about.background.enable_particles }}"></div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="section-heading aboutLabel">{{ about.label }}</div>
+                <div class="absolute-center">    
+                    <div class="wrapper">
+                        <div class="container text-white">
+                            <div class="row">
+                                <div class="col-xs-12 heading text-center"><p class="bottom-border bottom-border-hover center">{{ about.heading }}</p></div>  
+                                <div class="col-xs-12 description">
+                                    <p class="text-center">{{ about.description }}</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h3 class="featuredLabel bottom-border bottom-border-100">{{ about.featured.label }}</h3>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="featuredBoxContainer">
+                                    {%- for feature in about.featured.data %}
+                                        <div class="col-xs-6 feature-box text-white valign-wrapper">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-xs-12 valign-wrapper">
+                                                        <div class="feature-icon margin-center text-center hover-{{ feature.hover }}">
+                                                            <i class="fa fa-4x {{ feature.icon }}"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="feature-info text-center">
+                                                            <p class="margin-center">{{ feature.info }}</p>
+                                                            <span class="feature-subinfo">{{ feature.subinfo }}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {%- endfor %}
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h3 class="aboutSkillsLabel bottom-border bottom-border-100">{{ about.skills.label }}</h3>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <ul class="skills-container no-list">
+                                            {%- for skill in about.skills.data %}
+                                                <li class="skill">
+                                                    <div class="label">{{ skill.label }}</div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-striped" style="background-color:{{ skill.color }};width:0%;" role="progressbar" aria-valuenow="{{ skill.percent }}" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="progress-text">{{ skill.percent }}%</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            {%- endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- Container -->
+                    </div> <!-- Wrapper -->
+                </div> <!-- Absolute Center -->
+            </div> <!-- Container -->
+        </div><!-- Content -->
+    </section>
