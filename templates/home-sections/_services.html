@@ -23,7 +23,13 @@
                                 <div class="row">
                             {%- endif %}
                                     <div class="col-xs-12 col-sm-6 col-md-3 service-box">
-                                        <i class="fa {{ service.icon }} fa-4x display-block margin-five margin-bottom-20 text-white"></i>
+                                        <div class="service-icon">
+                                            {%- if service.icon|length != 0 %}
+                                            <i class="fa {{ service.icon }} fa-4x display-block text-white"></i>
+                                            {%- elif service.image|length != 0 %}
+                                            <img src="{{ service.image }}" />
+                                            {%- endif %}
+                                        </div>
                                         <h5 class="text-white">{{ service.title }}</h5>
                                         <span class="details text-white display-block">{{ service.description }}</span>
                                     </div>

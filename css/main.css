@@ -274,7 +274,10 @@ section .content.overlay-gold:before {
 	background: #FFF;
 }
 
-
+.icon-2x{
+	width: 8em;
+	height: 8em;
+}
 /** End Custom Classes **/
 
 
@@ -727,7 +730,24 @@ all and (max-height:400px) {
 
 .feature-box .feature-icon {
 	color: #FFF;
-	width: 80px;
+	width: 100%;
+	height: 8em;
+}
+
+.feature-box .feature-icon i::before{
+	width: 1em;
+	height: 1em;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.feature-box .feature-icon img{
+	width: auto;
+	height: 100%!important;
 }
 
 .feature-box .feature-info p {
@@ -1061,6 +1081,28 @@ all and (max-height:400px) {
 #servicesSection h5 {
 	font-size: 20px;
 	font-weight: 700;
+}
+
+#servicesSection .service-box .service-icon{
+	height: 8em;
+	text-align: center;
+	position: relative;
+}
+
+#servicesSection .service-box .service-icon img{
+	height: 8em;
+	width: auto;
+}
+
+#servicesSection .service-box .service-icon i::before{
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	position: absolute;
+	height: 1em;
+	width: 1em;
 }
 
 #servicesSection .service-box .details {

@@ -18,7 +18,8 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-7">
+                                {%- if about.featured.enabled == "1" %}
+                                <div class="col-sm-{%- if about.skills.enabled == '1' %}7{%- else %}12{%- endif %}">
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <h3 class="featuredLabel bottom-border bottom-border-100">{{ about.featured.label }}</h3>
@@ -26,12 +27,16 @@
                                     </div>
                                     <div class="row" id="featuredBoxContainer">
                                     {%- for feature in about.featured.data %}
-                                        <div class="col-xs-6 feature-box text-white valign-wrapper">
+                                        <div class="col-xs-{%- if about.skills.enabled == '1' %}6{%- else %}3{%- endif %} feature-box text-white valign-wrapper">
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col-xs-12 valign-wrapper">
                                                         <div class="feature-icon margin-center text-center hover-{{ feature.hover }}">
+                                                            {%- if feature.icon|length != 0 %}
                                                             <i class="fa fa-4x {{ feature.icon }}"></i>
+                                                            {%- elif feature.image|length != 0 %}
+                                                            <img src="{{ feature.image }}" alt="{{ feature.info }}" class="absolute-center"/>
+                                                            {%- endif %}
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12">
@@ -46,7 +51,9 @@
                                     {%- endfor %}
                                     </div>
                                 </div>
-                                <div class="col-sm-5">
+                                {%- endif %}
+                                {%- if about.skills.enabled == '1' %}
+                                <div class="col-sm-{%- if about.featured.enabled == '1' %}5{%- else %}12{%- endif %}">
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <h3 class="aboutSkillsLabel bottom-border bottom-border-100">{{ about.skills.label }}</h3>
@@ -67,6 +74,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {% endif %}
                             </div>
                         </div> <!-- Container -->
                     </div> <!-- Wrapper -->

@@ -46,33 +46,39 @@
 			"enable_parallax": "1"
 		},
 		"featured": {
+			"enabled": "1",
 			"label":"Features",
 			"data": [{
 				"icon": "fa-puzzle-piece",
+				"image": "",
 				"hover": "default",
 				"info": "9 modules",
 				"subinfo": "Enable/Disable the ones you want"
 			},
 			{
 				"icon": "fa-css3",
+				"image": "",
 				"hover": "yellow",
 				"info": "Bootstrap 3",
 				"subinfo": "Made with Bootstrap3"
 			},
 			{
 				"icon": "fa-image",
+				"image": "",
 				"hover": "orange",
 				"info": "3 Layer Background",
 				"subinfo": "Choose within Video, Image, or Particle Background"
 			},
 			{
 				"icon": "fa-suitcase",
+				"image": "",
 				"hover": "default",
 				"info": "Python Builder",
 				"subinfo": "Easily Generate the site using Python Base Builder"
 			}]
 		},
 		"skills": {
+			"enabled": "1",
 			"label": "Skills",
 			"data": [
 				{
@@ -203,41 +209,49 @@
 		"data":[
 			{
 				"icon": "fa-youtube",
+				"image": "",
 				"title": "Video Background",
 				"description": "Each section supports youtube video background!"
 			},
 			{
 				"icon": "fa-image",
+				"image": "",
 				"title": "Parallax",
 				"description": "Enable/Disable Parallax for any section"
 			},
 			{
 				"icon": "fa-puzzle-piece",
+				"image": "",
 				"title": "9 Modules",
 				"description": "Keep the module you want, Remove what you don't!"
 			},
 			{
 				"icon": "fa-css3",
+				"image": "",
 				"title": "Responsive",
 				"description": "Made with Bootstrap, it looks beautiful even on mobile!"
 			},
 			{
 				"icon": "fa-font-awesome",
+				"image": "",
 				"title": "Font Awesome",
 				"description": "Uses Font-Awesome Icons"
 			},
 			{
 				"icon": "fa-google",
+				"image": "",
 				"title": "SEO Friendly",
 				"description": "Meta, Open Graph Tags and Pre-rendered HTML increases your SEO"
 			},
 			{
 				"icon": "fa-github",
+				"image": "",
 				"title": "Open Source",
 				"description": "Open Source Means you can use it wherever you want!"
 			},
 			{
 				"icon": "fa-cube",
+				"image": "",
 				"title": "Builder",
 				"description": "Configure your options and the builder will generate the site for you!"
 			}
