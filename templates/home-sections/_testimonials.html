@@ -1,4 +1,4 @@
-<section id="testimonialSection" class="slide full-screen {% if testimonial.background.enable_parallax %}parallax-bg{% endif %}">
+<section id="testimonialSection" class="slide full-screen {% if testimonial.background.enable_parallax %}parallax-bg{% endif %} text-{{ testimonial.color }}">
     <div class="background-wrapper" style="background-image:url('{{ testimonial.background.image }}')">
         <div class="bg-video" data-enabled="{{ testimonial.background.enable_video }}">      
             <div class="yt-video" id="testimonials-video" data-videoId="{{ testimonial.background.video_id }}"></div>

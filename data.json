@@ -25,11 +25,14 @@
 			"enable_video": "1",
 			"video_id": "2QKQX7fbjnA",
 			"image": "images/backgrounds/bg-home.jpg",
-			"enable_parallax": "1"
+			"enable_parallax": "1",
+			"overlay": ""
 		},
+		"color": "light",
 		"subheading": ["9 Sections", "3 Layer Background", "Easy to Build", "Filterable Portfolio Grid"],
 		"avatar_enable":"1",
-        "avatar_url": "images/team/team1.jpg"
+        "avatar_url": "images/team/team1.jpg",
+		"avatar_circle": "1"
 	},
 	"about": {
 		"enabled": "1",
@@ -38,6 +41,7 @@
 		"heading": "About Me",
 		"description": "An open source beautiful single page personal portfolio template to showcase your profile. Contains 9 Sections- Home, About, Counter, Portfolio, Services, Testimonials, Brands, Team and Contact.",
 		"addToMenu": "1",
+		"color": "light",
 		"background": {
 			"enable_particles":"0",
 			"enable_video": "0",
@@ -114,8 +118,10 @@
 			"enable_video": "0",
 			"video_id": "",
 			"image": "images/backgrounds/pattern1.png",
-			"enable_parallax": "1"
+			"enable_parallax": "1",
+			"overlay": ""
 		},
+		"color": "light",
 		"data": [{
 				"label":"Lorem Ipsum",
 				"count": "1",
@@ -145,12 +151,14 @@
 		"heading": "Portfolio Section",
 		"description": "Showcase your portflio in beautiful filterable responsive grid.",
 		"addToMenu": "1",
+		"color": "light",
 		"background": {
 			"enable_particles": "1",
 			"enable_video": "0",
 			"video_id": "",
 			"image": "images/backgrounds/bg-1080p-4.jpg",
-			"enable_parallax": "1"
+			"enable_parallax": "1",
+			"overlay": ""
 		},
 		"layoutMode":"masonry",
 		"effect":"simple",
@@ -204,8 +212,10 @@
 			"enable_video": "",
 			"video_id": "",
 			"image": "",
-			"enable_parallax": ""
+			"enable_parallax": "",
+			"overlay":""
 		},
+		"color": "light",
 		"data":[
 			{
 				"icon": "fa-youtube",
@@ -269,8 +279,10 @@
 			"enable_video": "0",
 			"video_id":"",
 			"image": "images/backgrounds/bg-1080p-10.jpg",
-			"enable_parallax": "1"
+			"enable_parallax": "1",
+			"overlay":""
 		},
+		"color": "light",
 		"enable_controls": "0",
 		"data": [
 			{
@@ -307,8 +319,10 @@
 			"enable_video": "0",
 			"video_id": "",
 			"image": "",
-			"enable_parallax": "0"
+			"enable_parallax": "0",
+			"overlay": ""
 		},
+		"color": "light",
 		"data": ["images/brands/brand1.png", "images/brands/brand2.png", "images/brands/brand3.png"]
 	},
 	"team":{
@@ -323,8 +337,10 @@
 			"enable_video": "0",
 			"video_id": "",
 			"image": "images/backgrounds/bg-1080p-4.jpg",
-			"enable_parallax": "1"
+			"enable_parallax": "1",
+			"overlay": ""
 		},
+		"color": "light",
 		"members":[
 			{
 				"name": "Lorem Ipsum",
@@ -425,8 +441,10 @@
 			"enable_video": "0",
 			"video_id": "",
 			"image": "images/backgrounds/bg-1080p-9.jpeg",
-			"enable_parallax": "1"
+			"enable_parallax": "1",
+			"overlay":""
 		},
+		"color": "light",
 		"mobile": "XXXXXXXXXX",
 		"email": "demo@example.com",
 		"address": "602, Pavilion Court 16, Sector 128, <br>Noida, Uttar Pradesh,<br>India",

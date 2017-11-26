@@ -1,4 +1,4 @@
-<section id="contactSection" class="full-screen slide {% if contact.background.enable_parallax %}parallax-bg{% endif %}">
+<section id="contactSection" class="full-screen slide {% if contact.background.enable_parallax %}parallax-bg{% endif %} text-{{ contact.color }}">
     <div class="background-wrapper" style="background-image: url('{{ contact.background.image }}')">
         <div class="bg-video" data-enabled="{{ contact.background.enable_video }}">
             <div class="yt-video" data-videoId="{{ contact.background.video_id }}" id="contact-video"></div>
@@ -10,7 +10,7 @@
             <div class="section-heading contactLabel">{{ contact.label }}</div>
             <div class="absolute-center">    
                 <div class="wrapper">
-                    <div class="container text-white">
+                    <div class="container">
                         <div class="row">
                             <div class="col-xs-12 heading"><p class="bottom-border bottom-border-hover center">{{ contact.heading }}</p></div>  
                             <div class="col-xs-12 description">

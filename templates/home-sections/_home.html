@@ -1,4 +1,4 @@
-    <section id="mainSection" class="slide full-screen {% if home.background.enable_parallax %}parallax-bg{% endif %}">
+    <section id="mainSection" class="slide full-screen {% if home.background.enable_parallax %}parallax-bg{% endif %} text-{{ home.color }}">
         <!-- Home Background -->
         <div class="background-wrapper" style="background-image:url('{{ home.background.image }}');">
             <!-- video -->
@@ -8,13 +8,13 @@
             <!-- Particles -->
             <div class="bg-particles" id="home-particles" data-enabled="{{ home.background.enable_particles }}"></div>
         </div>
-        <div class="content">
+        <div class="content overlay-{{ home.background.overlay }}">
             <div class="container">
                <div class="absolute-center">
                     <div class="wrapper">
                         <!-- Avatar -->
                         {%- if home.avatar_enable == "1" %}
-                        <div class="avatar avatar-custom margin-center">
+                        <div class="avatar avatar-custom margin-center {% if home.avatar_circle == '1' %}circle{% endif %}">
                             <img src="{{ home.avatar_url }}">
                         </div>
                         {%- endif %}

@@ -1,4 +1,4 @@
-    <section id="aboutSection" class="slide full-screen box-shadow {% if about.background.enable_parallax %}parallax-bg{% endif %}">
+    <section id="aboutSection" class="slide full-screen box-shadow {% if about.background.enable_parallax %}parallax-bg{% endif %} text-{{ about.color }}">
         <div class="background-wrapper" style="background-image:url('{{ about.background.image }}')">
             <div class="bg-video" data-enabled="{{ about.background.enable_video }}">      
                 <div class="yt-video" data-videoId="{{ about.background.video_id }}" id="bg-video-about"></div>
@@ -10,7 +10,7 @@
                 <div class="section-heading aboutLabel">{{ about.label }}</div>
                 <div class="absolute-center">    
                     <div class="wrapper">
-                        <div class="container text-white">
+                        <div class="container">
                             <div class="row">
                                 <div class="col-xs-12 heading text-center"><p class="bottom-border bottom-border-hover center">{{ about.heading }}</p></div>  
                                 <div class="col-xs-12 description">
@@ -27,7 +27,7 @@
                                     </div>
                                     <div class="row" id="featuredBoxContainer">
                                     {%- for feature in about.featured.data %}
-                                        <div class="col-xs-{%- if about.skills.enabled == '1' %}6{%- else %}3{%- endif %} feature-box text-white valign-wrapper">
+                                        <div class="col-xs-{%- if about.skills.enabled == '1' %}6{%- else %}3{%- endif %} feature-box valign-wrapper">
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col-xs-12 valign-wrapper">

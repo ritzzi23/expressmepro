@@ -1,4 +1,4 @@
-<section id="portfolioSection" class="slide full-screen {% if portfolio.background.enable_parallax %}parallax-bg{% endif %}">
+<section id="portfolioSection" class="slide full-screen {% if portfolio.background.enable_parallax %}parallax-bg{% endif %} text-{{ portfolio.color }}">
     <div class="background-wrapper" style="background-image:url('{{ portfolio.background.image }}')">
         <div class="bg-video" data-enabled="{{ portfolio.background.enable_video }}">      
             <div class="yt-video" id="portfolio-video" data-videoId="{{ portfolio.background.video_id }}"></div>

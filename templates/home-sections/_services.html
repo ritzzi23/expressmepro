@@ -1,4 +1,4 @@
-<section id="servicesSection"  class="slidevalign-wrapper {% if services.background.enable_parallax %}parallax-bg{% endif %}"> 
+<section id="servicesSection"  class="slidevalign-wrapper {% if services.background.enable_parallax %}parallax-bg{% endif %} text-{{ services.color }}"> 
     <div class="background-wrapper" style="background-image:url('{{ services.background.image }}')">
         <div class="bg-video" data-enabled="{{ services.background.enable_video }}">      
             <div class="yt-video" data-videoId="{{ services.background.video_id }}"></div>
@@ -25,13 +25,13 @@
                                     <div class="col-xs-12 col-sm-6 col-md-3 service-box">
                                         <div class="service-icon">
                                             {%- if service.icon|length != 0 %}
-                                            <i class="fa {{ service.icon }} fa-4x display-block text-white"></i>
+                                            <i class="fa {{ service.icon }} fa-4x display-block "></i>
                                             {%- elif service.image|length != 0 %}
                                             <img src="{{ service.image }}" />
                                             {%- endif %}
                                         </div>
-                                        <h5 class="text-white">{{ service.title }}</h5>
-                                        <span class="details text-white display-block">{{ service.description }}</span>
+                                        <h5 class="">{{ service.title }}</h5>
+                                        <span class="details  display-block">{{ service.description }}</span>
                                     </div>
                                 {%- if loop.index%4 == 0 or loop.last %}
                                 </div>

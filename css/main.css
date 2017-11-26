@@ -153,7 +153,18 @@ section .content.no-overlay:before {
 
 section .content.overlay-gold:before {
 	background: rgba(58, 52, 42, 0.5);
-	;
+}
+
+section .content.overlay-white:before {
+	background: rgba(58, 52, 42, 0.5);
+}
+
+section .content.overlay-magenta:before{
+	background: rgba(145, 61, 136, 0.5);
+}
+
+section .content.overlay-cyan:before{
+	background: rgba(34, 167, 240, 0.5);
 }
 
 .parallax-bg.full-screen {
@@ -278,6 +289,10 @@ section .content.overlay-gold:before {
 	width: 8em;
 	height: 8em;
 }
+
+.circle img{
+	border-radius: 50%;
+}
 /** End Custom Classes **/
 
 
@@ -346,14 +361,29 @@ section {
 	transform: translateZ(0);
 }
 
+section.text-light{
+	color: #FFF;
+}
+
+section.text-dark{
+	color: #000;
+}
+
 section .heading {
 	font-size: 40px;
 	font-weight: 300;
-	color: #FFF;
 	font-family: 'Lato', sans-serif;
 	text-align: center;
 	padding-bottom: 20px;
 	cursor: pointer;
+}
+
+section.text-light .heading{
+	color: #FFF;
+}
+
+section.text-dark .heading{
+	color: #000;
 }
 
 section .description {
@@ -375,6 +405,7 @@ section .section-heading {
 	transform: translateZ(0);
 	display: none;
 }
+
 
 @media all and (min-width:300px) {
 	section .heading {
@@ -431,6 +462,11 @@ section .section-heading {
 	border: none;
 	margin: 0;
 	height: 50px;
+}
+
+#primaryNav.light{
+	background: #FFF;
+	color: #000;
 }
 
 #primaryNav .navbar-brand {
@@ -547,7 +583,6 @@ section .section-heading {
 	transform: scale(1);
 	transition-duration: 0.5s;
 	transition-timing-function: linear;
-	border-radius: 50%;
 }
 
 @media all and (min-width:300px),
@@ -575,9 +610,16 @@ all and (min-height:0px) {
 #aboutTitle {
 	font-weight: 400;
 	font-family: 'Poiret One', serif;
-	color: #FFF;
 	margin: 0;
 	line-height: 0.8;
+}
+
+section.text-light #aboutTitle{
+	color: #FFF;
+}
+
+section.text-dark #aboutTitle{
+	color: #000;
 }
 
 #aboutDesignation {
@@ -590,6 +632,14 @@ all and (min-height:0px) {
 	margin-top: 0.3em;
 	color: rgba(255, 255, 255, 0.5);
 	font-weight: 300;
+}
+
+section.text-dark #aboutDesignation{
+	color: rgba(0, 0, 0, 0.5);
+}
+
+section.text-dark #aboutSubTitle{
+	color: rgba(0, 0, 0, 0.5);
 }
 
 @media all and (min-width:300px),
@@ -633,7 +683,14 @@ all and (max-height:400px) {
 	text-transform: uppercase;
 	font-weight: 200;
 	font-size: 40px;
+}
+
+section.text-light #mainSection_menu{
 	color: rgba(255, 255, 255, 0.5);
+} 
+
+section.text-dark #mainSection_menu{
+	color: rgba(0, 0, 0, 0.5);
 }
 
 #mainSection_menu ul {
@@ -681,7 +738,14 @@ all and (max-height:400px) {
 
 #mainSection_menu li:hover {
 	transition-duration: 500ms;
+}
+
+section.text-light #mainSection_menu li:hover{
 	color: rgba(255, 255, 255, 0.7);
+}
+
+section.text-dark #mainSection_menu li:hover{
+	color: rgba(0, 0, 0, 0.7);
 }
 
 #mainSection_menu li:after {
@@ -729,9 +793,16 @@ all and (max-height:400px) {
 }
 
 .feature-box .feature-icon {
-	color: #FFF;
 	width: 100%;
 	height: 8em;
+}
+
+section.text-light .feature-icon{
+	color: #FFF;
+}
+
+section.text-dark .feature-icon{
+	color: #000;
 }
 
 .feature-box .feature-icon i::before{
@@ -751,16 +822,30 @@ all and (max-height:400px) {
 }
 
 .feature-box .feature-info p {
-	color: #FFF;
 	font-size: 1.4em;
 	font-weight: 400;
 	margin-bottom: 0;
 }
 
 .feature-box .feature-subinfo {
-	color: #FFF;
 	font-size: 0.8em;
 	font-weight: 300;
+}
+
+section.text-light .feature-box .feature-info p {
+	color: #FFF;
+}
+
+section.text-light .feature-box .feature-subinfo {
+	color: #FFF; 
+}
+
+section.text-dark .feature-box .feature-info p {
+	color: #000;
+}
+
+section.text-dark .feature-box .feature-subinfo {
+	color: #000; 
 }
 
 .feature-box:hover,
@@ -845,6 +930,14 @@ all and (max-height:400px) {
 	transition: 0.5s;
 	transition-delay: 0.2s;
 	border: none;
+}
+
+section.text-light .portfolio-categories a{
+	color: #FFF;
+}
+
+section.text-dark .portfolio-categories a{
+	color: #000;
 }
 
 .portfolio-categories a:hover,
@@ -1031,9 +1124,15 @@ all and (max-height:400px) {
 
 #counterSection {
 	padding: 20px;
+}
+
+section.text-light#counterSection{
 	color: #FFF;
 }
 
+section.text-dark#counterSection{
+	color: #000;
+}
 
 .counter {
 	font-weight: 700;
@@ -1107,8 +1206,15 @@ all and (max-height:400px) {
 
 #servicesSection .service-box .details {
 	font-size: 1em;
-	color: #777;
 	font-weight: 300;
+}
+
+section.text-light .service-box .details{
+	color: #777;
+}
+
+section.text-dark .service-box .details{
+	color: #000;
 }
 
 @media all and (min-width:300px) {
@@ -1147,18 +1253,31 @@ all and (max-height:400px) {
 	padding: 5px 30px;
 	margin: 30px 0 20px;
 	line-height: 22px;
-	color: rgba(255, 255, 255, 0.8);
 	font-family: 'Lato', sans-serif;
 }
 
 .testimonialBox .name {
 	font-family: 'Poiret One', sans-serif;
 	font-size: 14px;
-	color: rgba(255, 255, 255, 0.6);
 	font-weight: 700;
 	margin: 5px 0;
 }
 
+section.text-light .testimonialBox p{
+	color: rgba(255, 255, 255, 0.8);
+}
+
+section.text-light .testimonialBox .name{
+	color: rgba(255, 255, 255, 0.6);
+}
+
+section.text-dark .testimonialBox p{
+	color: rgba(255, 255, 255, 0.8);
+}
+
+section.text-dark .testimonialBox .name{
+	color: rgba(255, 255, 255, 0.6);
+}
 
 /** End Testimonial Section **/
 
@@ -1283,8 +1402,15 @@ all and (max-height:400px) {
 	bottom: 0;
 	list-style-type: none;
 	padding: 0;
-	color: rgba(255, 255, 255, 0.5);
 	text-align: center;
+}
+
+section.text-light .linksContainer>ul {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+section.text-dark .linksContainer>ul {
+	color: rgba(0, 0, 0, 0.5);
 }
 
 .linksContainer .col {
@@ -1307,9 +1433,16 @@ all and (max-height:400px) {
 }
 
 .linksContainer>ul>li:hover {
-	color: rgba(255, 255, 255, 0.9);
 	transition-duration: 500ms;
 	cursor: pointer;
+}
+
+section.text-light .linksContainer>ul>li:hover{
+	color: rgba(255, 255, 255, 0.9);
+}
+
+section.text-dark .linksContainer>ul>li:hover{
+	color: rgba(0, 0, 0, 0.9);
 }
 
 .linksContainer>ul>li.hover-blue:hover,
